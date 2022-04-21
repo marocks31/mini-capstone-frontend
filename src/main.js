@@ -3,7 +3,10 @@ import App from "./App.vue";
 import router from "./router";
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";
+axios.defaults.baseURL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:3000"
+    : "https://evening-earth-40662.herokuapp.com/products";
 
 // var jwt = localStorage.getItem("jwt");
 // if (jwt) {
